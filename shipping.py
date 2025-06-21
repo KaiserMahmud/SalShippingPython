@@ -18,6 +18,7 @@ premium_cost = 125.00
 print("Premium Shipping cost: ")
 print(premium_cost)
 
+'''
 # Drone Shipping
 if weight <= 2:
     cost = weight * 1.50 + 0
@@ -30,3 +31,17 @@ else:
 
 print("Drone Shipping cost: ")
 print(cost)
+'''
+
+# Drone Shipping
+if weight <= 2:
+    shipping_cost = weight * 4.50 + 0
+elif 2 < weight <= 6:
+    shipping_cost = weight * 9.00 + 0
+elif 6 < weight <= 10:
+    shipping_cost = weight * 12.00 + 0
+else:
+    shipping_cost = weight * 14.25 + 0
+
+print("Drone Shipping cost: ")
+print(shipping_cost)
